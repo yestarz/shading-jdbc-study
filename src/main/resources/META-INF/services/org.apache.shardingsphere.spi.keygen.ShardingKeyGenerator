@@ -1,0 +1,2 @@
+com.yyt.shadingjdbcstudy.config.keygen.MyShardingKeyGenerator
+com.yyt.shadingjdbcstudy.config.keygen.RedisShardingKeyGenerator
