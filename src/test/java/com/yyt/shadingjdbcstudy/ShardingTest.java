@@ -7,6 +7,7 @@ import com.yyt.shadingjdbcstudy.mapper.OrderMapper;
 import org.junit.Test;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -27,6 +28,18 @@ public class ShardingTest extends ShadingJdbcStudyApplicationTests {
             order.setCreateTime(new Date());
             orderMapper.insert(order);
         }
+    }
+
+    @Test
+    public void insert1() {
+        List<Order> orderList = new ArrayList<>();
+        for (int i = 0, j = 100; i < 100; i++, j++) {
+            Order order = new Order();
+            order.setUserId((long) j);
+            order.setCreateTime(new Date());
+            orderList.add(order);
+        }
+        orderMapper.insertBatch(orderList);
     }
 
     /**
