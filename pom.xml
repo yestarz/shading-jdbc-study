@@ -11,6 +11,8 @@
         <module>config-02</module>
         <module>config-03</module>
         <module>config-04</module>
+        <module>config-05</module>
+        <module>service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

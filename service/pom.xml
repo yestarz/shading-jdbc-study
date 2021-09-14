@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>facade</artifactId>
+    <artifactId>service</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -19,13 +19,21 @@
     <dependencies>
         <dependency>
             <groupId>com.yyt</groupId>
-            <artifactId>dao</artifactId>
+            <artifactId>config-05</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.yyt</groupId>
-            <artifactId>service</artifactId>
+            <artifactId>dao</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!-- 使用XA事务时，需要引入此模块 -->
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>sharding-transaction-xa-core</artifactId>
+            <version>4.1.1</version>
+        </dependency>
     </dependencies>
+
 </project>

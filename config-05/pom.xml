@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>facade</artifactId>
+    <artifactId>config-05</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,14 +18,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.yyt</groupId>
-            <artifactId>dao</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yyt</groupId>
-            <artifactId>service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
     </dependencies>
+
 </project>
