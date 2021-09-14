@@ -1,0 +1,2 @@
+com.yyt.shardingjdbcstudy.config03.keygen.MyShardingKeyGenerator
+com.yyt.shardingjdbcstudy.config03.keygen.RedisShardingKeyGenerator
